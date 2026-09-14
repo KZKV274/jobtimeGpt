@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0B0D10">
+  <meta name="description" content="ShiftPulse — персональный журнал рабочих смен">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>ShiftPulse</title>
+</head>
+<body>
+<div id="toast" class="toast" aria-live="polite"></div>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">SP</div><div><strong>ShiftPulse</strong><span>Work journal</span></div></div>
+    <nav id="sideNav" class="side-nav"></nav>
+    <div class="sidebar-foot"><button class="ghost-btn" data-action="settings">⚙ Настройки</button></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow" id="todayLabel">TODAY</p>
+        <h1 id="pageTitle">Добрый вечер</h1>
+      </div>
+      <button class="icon-btn" data-action="settings" aria-label="Настройки">⚙</button>
+    </header>
+
+    <section id="view-home" class="view active"></section>
+    <section id="view-add" class="view"></section>
+    <section id="view-stats" class="view"></section>
+    <section id="view-history" class="view"></section>
+    <section id="view-settings" class="view"></section>
+  </main>
+
+  <nav id="bottomNav" class="bottom-nav"></nav>
+</div>
+
+<div id="modalRoot"></div>
+<script src="app.js"></script>
+</body>
+</html>
